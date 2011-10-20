@@ -5,4 +5,4 @@ Basic AD explorer
 3. Build in VS2010 
 4. Run!
 
-![Screenshot](Images/Screenshot.png)
+![Screenshot](//github.com/cameronharris/ADExplorer/raw/master/Images/Screenshot.png)
