@@ -1,0 +1,11 @@
+
+*.dll
+*.exe
+packages/
+*.user
+*.suo
+_ReSharper.*
+CameronHarris.ADManagement/bin
+CameronHarris.ADManagement/obj
+CameronHarris.ADManagement/Scripts/Site.js
+CameronHarris.ADManagement/Content/Site.css

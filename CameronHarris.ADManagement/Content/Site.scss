@@ -1,0 +1,60 @@
+﻿html, body, #main, .navigator { height: 100%; }
+body { 
+	font-size: 12px;
+	font-family: Lucida Grande;
+	margin: 0;
+	padding: 0;
+	background: #ddd;
+}
+
+.column 
+{
+	background: -webkit-linear-gradient(left, #fafafa, white);
+
+    width: 400px;
+	
+    border-right: 1px solid black;
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+
+	overflow-y: auto;
+
+	> ul { 
+		list-style-type: none; 
+		margin: 0;
+		padding: 0;
+	
+    
+		> li {
+			padding: 5px 7px 5px 30px;
+			cursor: pointer;
+
+			background-repeat: no-repeat;
+			background-position: 6px 4px, right 4px;
+
+			display: none;
+
+			&.class-container { background-image: url("icons/folder.png"), url("icons/resultset_next.png"); display: list-item; }
+			&.class-user { background-image: url("icons/user.png"); display: list-item; }
+			&.class-builtinDomain { background-image: url("icons/cog.png"), url("icons/resultset_next.png"); display: list-item; }
+			&.class-organizationalUnit { background-image: url("icons/chart_organisation.png"), url("icons/resultset_next.png"); display: list-item; }
+			&.class-user.class-computer { background-image: url("icons/computer.png"); display: list-item; }
+			&.class-group { background-image: url("icons/group.png"); display: list-item; }
+
+			&:hover { color: red; }
+			&.active { background-color: #005982; color: white;  }
+		}
+
+	}
+
+	a:link, a:visited {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.user-info {
+		padding: 10px 20px;
+	}
+}

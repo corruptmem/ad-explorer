@@ -1,0 +1,28 @@
+﻿@model CameronHarris.ADManagement.Models.LdapEntity
+@using Microsoft.Web.Helpers
+@{
+    ViewBag.Title = "UserInfo";
+    Layout = null;
+}
+
+<div class='user-info'>
+<h1>User: @Model.Name</h1>
+
+@if (!string.IsNullOrWhiteSpace(Model.Email))
+{
+    @Gravatar.GetHtml(Model.Email)
+}
+
+
+<h2>Groups</h2>
+<ul>
+@foreach (var group in Model.Groups)
+{
+    <li>@group.Split(',').First().Split('=').Last()</li>
+}
+@if (Model.Groups.Count() == 0)
+{
+    <li>User is not in any groups</li>
+}
+</ul>
+</div>

@@ -1,0 +1,13 @@
+﻿@model CameronHarris.ADManagement.Models.LdapEntity
+@{
+    Layout = null;
+}
+
+<ul>
+@foreach (var entity in Model.Children)
+{
+    <li class='@(entity.HasChildren?"has-children":"no-children") @(string.Join(" ", entity.ObjectClasses.Select(x=>"class-"+x))) @(ViewBag.Active==entity.Path?"active":string.Empty)'>
+        <a href='@Url.Action("SubPath", new { Path = entity.Path } )' data-path='@Url.Encode(entity.Path)'>@entity.Name</a>
+    </li>
+}
+</ul>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameronHarris.ADManagement", "CameronHarris.ADManagement\CameronHarris.ADManagement.csproj", "{384A46D1-2686-442A-BF1C-2B15B53246ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{384A46D1-2686-442A-BF1C-2B15B53246ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384A46D1-2686-442A-BF1C-2B15B53246ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384A46D1-2686-442A-BF1C-2B15B53246ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384A46D1-2686-442A-BF1C-2B15B53246ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

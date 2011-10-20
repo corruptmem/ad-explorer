@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CameronHarris.ADManagement.Models.LdapEntity>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class='navigator'>
+    @{ var i = 0; }
+    @foreach (var item in Model)
+    {
+        ViewBag.Active = ViewBag.Selected.ContainsKey(item.Path) ? ViewBag.Selected[item.Path] : null;
+        <div class='column' style='left: @(401*i)px'>
+            @if (item.ObjectClasses.Any(x => x == "user"))
+            {
+                @Html.Partial("UserInfo", item)
+            }
+            else
+            {
+                @Html.Partial("SubPath", item)
+            }
+        </div>
+        i++;
+    }
+</div>
